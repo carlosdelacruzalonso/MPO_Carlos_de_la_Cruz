@@ -95,3 +95,4 @@ print("Tipo de dato: ", type(dato))
 nombreAlumno = "Carlos"
 edad = 25
 print(f"Hola soy {nombreAlumno} y tengo {edad} años.")
+
