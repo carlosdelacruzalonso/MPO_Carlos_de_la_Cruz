@@ -5,6 +5,7 @@ to_int = int(fahrenheit_to_celsius)
 celsius = (to_int - 32) / 1.8
 print(f"Equivale a {round(celsius, 2)} °C")
 
+
 #Mini app 2 - Body mass index
 
 peso = int(input("Escribe aquí tu peso en kg: "))
@@ -14,6 +15,7 @@ i_m_c = peso / (altura**2)
 
 print(f"Tu indice de masa corporal es: {round(i_m_c, 2)}")
 
+
 #Mini app 3 - Calcula la hipotenusa
 
 cateto1 = int(input("Introduce el primer cateto del triángulo: "))
@@ -22,6 +24,7 @@ resultado = (cateto1**2 + cateto2**2)
 hipotenusa = (resultado ** 0.5)
 
 print(f"La longitud de la hipotenusa es: {round(hipotenusa, 2)}")
+
 
 #Mini app 4 - Spare change in Colombian pesos, peruvian soles and brazilian reais to EUR.
 pesos_left = float(input("What do you have left in pesos? "))
@@ -39,3 +42,49 @@ real_euro = reales_left * real_a_euro
 eur_total = peso_euro + sol_euro + real_euro
 
 print(f"You have a total of {round(eur_total, 2)} €")
+
+
+###Mini script (¿He aprobado?
+
+grade = int(input("Escribe que nota has sacado del 0-100: "))
+if  grade >= 55:
+  print("You passed.")
+else:
+  print("You failed little piece of shit.")
+  
+
+###Mini script (pH level)
+
+value = int(input("Insert pH value between 1-14: "))
+if value > 7:
+  print("Basic")
+elif value < 7:
+  print("Acidic")
+else:
+  print("Neutral")
+  
+
+#Mini app 5 - The magic 8 Ball
+
+import random
+question = input("Write your question for the Magic 8 Ball: ")
+
+num = random.randint(1,9)
+if num == 1:
+  print("Magic 8 Ball: Yes - definitely.")
+elif num == 2:
+  print("Magic 8 Ball: It is decidedly so.")
+elif num == 3:
+  print("Magic 8 Ball: Without a doubt.")
+elif num == 4:
+  print("Magic 8 Ball: Reply hazy, try again.")
+elif num == 5:
+  print("Magic 8 Ball: Ask again later.")
+elif num == 6:
+  print("Magic 8 Ball: Better not tell you now.")
+elif num == 7:
+  print("Magic 8 Ball: My sources say no.")
+elif num == 8:
+  print ("Magic 8 Ball: Outlook not so good.")
+else:
+  print("Magic 8 Ball: Very doubtful")
