@@ -45,7 +45,7 @@ eur_total = peso_euro + sol_euro + real_euro
 print(f"You have a total of {round(eur_total, 2)} €")
 
 
-###Mini script (¿He aprobado?
+###Mini script (¿He aprobado?)
 
 grade = int(input("Escribe que nota has sacado del 0-100: "))
 if  grade >= 55:
