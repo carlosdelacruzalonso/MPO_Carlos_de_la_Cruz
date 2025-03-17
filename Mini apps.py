@@ -88,3 +88,21 @@ elif num == 8:
   print ("Magic 8 Ball: Outlook not so good.")
 else:
   print("Magic 8 Ball: Very doubtful")
+
+
+#Mini app 6 - The Cyclone roller coaster
+
+altura = float(input("¿Cuál es tu altura en metros? "))
+creditos = int(input("¿Cuántos créditos tienes? "))
+
+#requisitos minimos : altura >= 1.37m. Creditos >= 10.
+
+if altura >= 1.37 and creditos >= 10:
+  print("¡Disfruta del viaje!")
+elif altura < 1.37 and creditos >= 10:
+  print("No eres lo suficientemente alto para subir.")
+elif altura >= 1.37 and creditos < 10:
+  print("No tienes suficientes créditos.")
+else:
+  print("No cumples ninguno de los requisitos")
+  
