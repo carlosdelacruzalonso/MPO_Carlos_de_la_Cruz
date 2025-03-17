@@ -27,6 +27,7 @@ print(f"La longitud de la hipotenusa es: {round(hipotenusa, 2)}")
 
 
 #Mini app 4 - Spare change in Colombian pesos, peruvian soles and brazilian reais to EUR.
+
 pesos_left = float(input("What do you have left in pesos? "))
 soles_left = float(input("What do you have left in soles? "))
 reales_left = float(input("What do you have left in reales? "))
