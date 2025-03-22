@@ -1,6 +1,4 @@
-#print("Hello world")
-
-#Hecho por mi en clase.
+print("Hello world")
 
 #Enteros (int)
 #numero entero sin decimal (positivo o negativo)
