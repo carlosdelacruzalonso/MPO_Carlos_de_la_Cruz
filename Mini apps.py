@@ -107,3 +107,62 @@ elif altura >= 1.37 and creditos < 10:
 else:
   print("No cumples ninguno de los requisitos")
   
+
+#Mini app 7 - The Sorting Hat
+
+Gryffindor = 0
+Ravenclaw = 0
+Hufflepuff = 0
+Slytherin = 0
+
+print("Question 1, Do you like Dawn(1) or dusk(2)?")
+answer1 = int(input("Enter your answer: "))
+
+if answer1 == 1:
+    Gryffindor = Gryffindor + 1
+    Ravenclaw = Ravenclaw + 1
+elif answer1 == 2:
+    Hufflepuff = Hufflepuff + 1
+    Slytherin = Slytherin + 1
+else:
+    print("Wrong input")
+
+print("Question 2, When I’m dead, I want people to remember me as: The Good(1), The Great(2), The Wise(3), The Bold(4)")
+answer2 =  int(input("Enter your answer here: "))
+
+if answer2 == 1:
+    Hufflepuff = Hufflepuff + 2
+elif answer2 == 2:
+    Slytherin = Slytherin + 2
+elif answer2 == 3:
+    Ravenclaw = Ravenclaw + 2
+elif answer2 == 4:
+    Gryffindor = Gryffindor + 2
+else:
+    print("Wrong input")
+
+print("Question 3, Which kind of instrument most pleases your ear? The violin(1), The trumpet (2), The piano (3), The drum(4)")
+answer3 = int(input("Enter your answer here: "))
+
+if answer3 == 1:
+    Slytherin = Slytherin + 4
+elif answer3 == 2:
+    Hufflepuff = Hufflepuff + 4
+elif answer3 == 3:
+    Ravenclaw = Ravenclaw + 4
+elif answer3 == 4:
+    Gryffindor = Gryffindor + 4
+else:
+    print("Wrong input")
+
+if Gryffindor == max(Gryffindor,Ravenclaw,Hufflepuff,Slytherin):
+    print("You belong to Gryffindor! 🦁")
+elif Ravenclaw == max(Gryffindor,Ravenclaw,Hufflepuff,Slytherin):
+    print("You belong to Ravenclaw! 🦅")
+elif Hufflepuff == max(Gryffindor,Ravenclaw,Hufflepuff,Slytherin):
+    print("You belong to Hufflepuff! 🦡")
+elif Slytherin == max(Gryffindor,Ravenclaw,Hufflepuff,Slytherin):
+    print("You belong to  Slytherin! 🐍")
+
+print(f"In case you want to see the complete score: Gryffindor: {Gryffindor}, Ravenclaw: {Ravenclaw}, Hufflepuff: {Hufflepuff}, Slytherin: {Slytherin}")
+
