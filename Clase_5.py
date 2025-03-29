@@ -74,9 +74,11 @@ print("Nombre:", nombre)
 print("Edad:", edad)
 print("Ciudad:", ciudad)
 
+
 # Crear una lista con nombres de alumnos, cambiar el nombre del segundo y mostrar la lista completa.
 
 alumnos = ["Carlos", "Alberto", "Hugo", "Dani"]
 print(alumnos)
 alumnos[1] = "Alex"
 print(alumnos)
+
