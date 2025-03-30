@@ -220,3 +220,33 @@ elif month == 10 or month == 11 or month == 12:
 else:
   print("Invalid")
 
+
+#Mini app 11 - 🧑‍🚀 Planet Weights
+
+#Pido datos al usuario
+
+e_weight = float(input("What´s your Earth weight? "))
+planet_num = int(input("What´s your planet number? "))
+
+#User weight : destination weight = earth weight x relative gravity
+
+#Diccionario con los factores de gravedad
+
+gravity_factors = {
+    1: 0.38, #Mercury
+    2: 0.91, # Venus
+    3: 0.38, # Mars
+    4: 2.53, # Jupiter
+    5: 1.07, # Saturn
+    6: 0.89, # Uranus
+    7: 1.14  # Neptune
+}
+
+#Verifico si el planeta es valido (1-7) y calculo peso
+
+if planet_num in gravity_factors:
+    destination_weight = e_weight * gravity_factors[planet_num]
+    print(f"Your destination weight is: {destination_weight:.2f}")
+else:
+    print("Error 404: Invalid planet number")
+
