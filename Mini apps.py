@@ -250,3 +250,17 @@ if planet_num in gravity_factors:
 else:
     print("Error 404: Invalid planet number")
 
+
+#Mini app 12 - Guess number
+
+guess = 0
+tries = 0
+
+while guess != 6 and tries <5:
+    guess = int(input("Guess the number:  "))
+    tries = tries + 1
+if guess == 6:
+    print("You got it!")
+else:
+    print("Out of tries!")
+
