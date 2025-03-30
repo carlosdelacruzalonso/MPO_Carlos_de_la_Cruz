@@ -166,3 +166,21 @@ elif Slytherin == max(Gryffindor,Ravenclaw,Hufflepuff,Slytherin):
 
 print(f"In case you want to see the complete score: Gryffindor: {Gryffindor}, Ravenclaw: {Ravenclaw}, Hufflepuff: {Hufflepuff}, Slytherin: {Slytherin}")
 
+
+#Mini app 8 - ⭐Food Ratings
+
+rating = int(input("How many stars would you give for your level of satisfaction, from one to five? "))
+
+if rating > 4.5:
+  print("Extraordinary")
+elif rating > 4:
+  print("Excellent")
+elif rating > 3:
+  print("Good")
+elif rating > 2:
+  print("Fair")
+else:
+  print("Poor")
+
+print("Thank you for sharing your level of satisfaction! We hope to see you again soon.")
+
