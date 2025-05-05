@@ -264,3 +264,44 @@ if guess == 6:
 else:
     print("Out of tries!")
 
+
+#Mini app 13 - Detention
+
+#Suppose you got detention and the teacher wants you to write
+# "I will not use Snapchat in class" on the whiteboard 100 times.
+
+for i in range(101):
+  print("I will not use Snapchat in class")
+
+
+#Mini app 14 - 99 bottles
+
+#"99 Bottles of Beer" is an old song that annoying kids, oops I mean everyone, sang on road trips to pass the time.
+#Create a program and use a for loop and a range() function to print out all the verses of "99 Bottles of Beer."
+
+for i in range (99,0,-1):
+  print(f"{i} bottles of beer on the wall \n{i} bottles of beer \nTake one down, pass it around")
+
+
+#Mini app 15 - Fizz-buzz
+
+#Fizz Buzz is a children's word game that teaches division. It's also a classic technical interview question at countless companies. 🐝
+#Though this challenge may appear simple to experienced coders, it is designed to weed out 90% of job candidates who cannot apply their coding knowledge to a new problem creatively.
+#Want to give it a try?
+#Create a program that outputs numbers from 1 to 100.
+#Here's the catch:
+#For multiples of 3, print "Fizz" instead of the number.
+#For multiples of 5, print "Buzz" instead of the number.
+#Here's the tricky part: For multiples of 3 and 5, print "FizzBuzz".
+
+for i in range(1,101):
+    if i%3 == 0 and i%5 == 0:
+        print("FizzBuzz")
+    elif i%3 == 0:
+        print("Fizz")
+    elif i%5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
+  
